@@ -7,6 +7,8 @@ class Book{
         
     }
     render(){
+        //render function is to create elements to render to the browser
+        //each element corresponds to properties inside "class Book"
         const bookDetails = document.createElement("div");
         
         const h1 = document.createElement("h1");
@@ -34,6 +36,8 @@ class Bookshelf{
     }
     
     seed(bookData){
+        //seed method is creating a new instance and looping through each
+        //object within bookData and pushing into empty arrary
     for(const book of bookData){
         const newBook = new Book(book.title, book.author, book.language, book.subject);
         this.bookData.push(newBook)
@@ -46,7 +50,7 @@ class Bookshelf{
         for(const book of this.bookData){
             bookShelfInfo.append(book.render())
         }
-
+        //appending bookshelfInfo to the browser(document.body)
         document.body.append(bookShelfInfo);
     }
 }

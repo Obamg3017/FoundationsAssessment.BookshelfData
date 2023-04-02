@@ -1,3 +1,23 @@
 *{
-    
+    text-align: center;
+    background-color: rgb(230, 237, 238);
+}
+
+div{
+    border-style:double;
+    border-width: 1em;
+    border-color: rgba(144, 5, 5, 0.683);
+}
+
+h1, h2, h3{
+    font-size: 30px;
+    color: rgba(100, 8, 8, 0.543);
+    text-transform: capitalize;
+}
+
+p{
+  font-size: 20px;
+  color: rgba(100, 8, 8, 0.543); 
+  text-transform: capitalize; 
+  font-weight:bold ;
 }
