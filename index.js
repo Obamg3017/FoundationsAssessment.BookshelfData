@@ -1,5 +1,5 @@
-const bookInstance = new Bookshelf();
+const bookShelfInstance = new Bookshelf();
 
-Bookshelf.seed(bookData);
+bookShelfInstance.seed(bookData);
 
-bookInstance.render();
+bookShelfInstance.render();
